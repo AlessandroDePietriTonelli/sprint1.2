@@ -1,0 +1,129 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn {
+    color: white;  
+}
+
+.btn-firefox {
+    background-color: lightgray;
+    color: black;
+}
+
+.azul {
+    margin-top: -300px;
+    margin-left: 160px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-bottom-left-radius: 200px;
+    background-color: #5266df;
+    z-index: -1;
+}
+
+.azul-tab1 {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: #5266df;
+    border-bottom-right-radius: 200px;
+    z-index: -1;
+    margin-top: 200px;
+    margin-left: 160px;
+}
+
+.azul-tab2 {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: #5266df;
+    border-bottom-right-radius: 200px;
+    z-index: -1;
+    margin-top: 250px;
+    margin-left: 160px;
+}
+
+.azul-tab3 {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: #5266df;
+    border-bottom-right-radius: 200px;
+    z-index: -1;
+    margin-top: 250px;
+    margin-left: 160px;
+}
+
+.nav-link {
+    color: #4b4949; 
+  }
+
+  .nav-link.active {
+    color: black; 
+    
+  }
+
+  .nav-underline .nav-link:hover {
+    color: $secondary; 
+  }
+
+
+
+  .nav-underline .nav-link.active:after {
+    display: block;
+    width: 100%;
+    height: 2px; 
+    background-color: $secondary; 
+  }
+
+  .download {
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+
+  .chrome {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firefox {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opera {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 767.98px) {
+    .download {  
+        flex-direction: column;
+      }
+
+    .chrome {
+        width: 90%;
+    }
+
+    .firefox {
+        width: 90%;
+    }
+
+    .opera {
+        width: 90%;
+    }
+  }
