@@ -6,7 +6,15 @@ $theme-colors: (
     "secondary": $secondary
 );
 
+$accordion-icon-color: $primary;
+
+
+$nav-underline-link-active-color: $secondary;
+
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
 
 .btn {
     color: white;  
@@ -17,113 +25,118 @@ $theme-colors: (
     color: black;
 }
 
-.azul {
-    margin-top: -300px;
-    margin-left: 160px;
+.img-main {
     position: relative;
-    width: 500px;
-    height: 300px;
-    border-bottom-left-radius: 200px;
-    background-color: #5266df;
-    z-index: -1;
+    z-index: 1;
 }
 
-.azul-tab1 {
-    position: relative;
-    width: 500px;
-    height: 200px;
-    background-color: #5266df;
-    border-bottom-right-radius: 200px;
+.blueShadow {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 85%;
+    height: 70%;
+    background: #5265E1;
     z-index: -1;
-    margin-top: 200px;
-    margin-left: 160px;
+    border-bottom-left-radius: 8rem;
 }
 
-.azul-tab2 {
+.img-tab {
     position: relative;
-    width: 500px;
-    height: 200px;
-    background-color: #5266df;
-    border-bottom-right-radius: 200px;
-    z-index: -1;
-    margin-top: 250px;
-    margin-left: 160px;
+    z-index: 1;
 }
 
-.azul-tab3 {
-    position: relative;
-    width: 500px;
-    height: 200px;
-    background-color: #5266df;
-    border-bottom-right-radius: 200px;
+.blueShadowTab {
+    position: absolute;
+    right: 24%;
+    bottom: -18%;
+    width: 85%;
+    height: 70%;
+    background: #5265E1;
     z-index: -1;
-    margin-top: 250px;
-    margin-left: 160px;
+    border-bottom-right-radius: 8rem;
 }
 
-.nav-link {
-    color: #4b4949; 
-  }
+.blueShadowTab2 {
+    position: absolute;
+    right: 37%;
+    bottom: -9%;
+    width: 70%;
+    height: 80%;
+    background: #5265E1;
+    z-index: -1;
+    border-bottom-right-radius: 8rem;
+}
 
-  .nav-link.active {
-    color: black; 
+.nav-link { 
+    color: black;   
+}
+
+#cards {
     
-  }
-
-  .nav-underline .nav-link:hover {
-    color: $secondary; 
-  }
-
-
-
-  .nav-underline .nav-link.active:after {
-    display: block;
-    width: 100%;
-    height: 2px; 
-    background-color: $secondary; 
-  }
-
-  .download {
     display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+#cards .card {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    height: 400px;
-  }
+    width: calc(100% / 4);
+    height: 80%;
+    align-items: center;
+    box-shadow: 1px 1px 3px rgb(233, 230, 230);
+    margin: 20px;
+}
 
-  .chrome {
+#chrome{
+    
     align-self: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 
-  .firefox {
+#firefox{
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 
-  .opera {
+#opera{
     align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 
-  @media (max-width: 767.98px) {
-    .download {  
+@media (max-width: 767.98px) {
+    #cards {
+        
+        display: flex;
         flex-direction: column;
-      }
-
-    .chrome {
         width: 90%;
+        height: 1000px;
+        margin: 0 auto;   
+        
     }
 
-    .firefox {
+    #cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 90%;
+        height: 80%;
+        align-items: center;
+        box-shadow: 1px 1px 3px rgb(233, 230, 230);
+        margin: 20px;
     }
 
-    .opera {
-        width: 90%;
+    #chrome{
+    
+        align-self: center;
     }
-  }
+    
+    #firefox{
+        align-self: center;
+    }
+    
+    #opera{
+        align-self: center;
+    }
+   
+}
+

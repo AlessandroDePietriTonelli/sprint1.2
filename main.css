@@ -3647,7 +3647,7 @@ textarea.form-control-lg {
 .nav-underline {
   --bs-nav-underline-gap: 1rem;
   --bs-nav-underline-border-width: 0.125rem;
-  --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
+  --bs-nav-underline-link-active-color: #FA5959;
   gap: var(--bs-nav-underline-gap);
 }
 .nav-underline .nav-link {
@@ -4316,7 +4316,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%235265E1' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
@@ -11410,107 +11410,107 @@ textarea.form-control-lg {
   color: black;
 }
 
-.azul {
-  margin-top: -300px;
-  margin-left: 160px;
+.img-main {
   position: relative;
-  width: 500px;
-  height: 300px;
-  border-bottom-left-radius: 200px;
-  background-color: #5266df;
-  z-index: -1;
+  z-index: 1;
 }
 
-.azul-tab1 {
-  position: relative;
-  width: 500px;
-  height: 200px;
-  background-color: #5266df;
-  border-bottom-right-radius: 200px;
+.blueShadow {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  width: 85%;
+  height: 70%;
+  background: #5265E1;
   z-index: -1;
-  margin-top: 200px;
-  margin-left: 160px;
+  border-bottom-left-radius: 8rem;
 }
 
-.azul-tab2 {
+.img-tab {
   position: relative;
-  width: 500px;
-  height: 200px;
-  background-color: #5266df;
-  border-bottom-right-radius: 200px;
-  z-index: -1;
-  margin-top: 250px;
-  margin-left: 160px;
+  z-index: 1;
 }
 
-.azul-tab3 {
-  position: relative;
-  width: 500px;
-  height: 200px;
-  background-color: #5266df;
-  border-bottom-right-radius: 200px;
+.blueShadowTab {
+  position: absolute;
+  right: 24%;
+  bottom: -18%;
+  width: 85%;
+  height: 70%;
+  background: #5265E1;
   z-index: -1;
-  margin-top: 250px;
-  margin-left: 160px;
+  border-bottom-right-radius: 8rem;
+}
+
+.blueShadowTab2 {
+  position: absolute;
+  right: 37%;
+  bottom: -9%;
+  width: 70%;
+  height: 80%;
+  background: #5265E1;
+  z-index: -1;
+  border-bottom-right-radius: 8rem;
 }
 
 .nav-link {
-  color: #4b4949;
-}
-
-.nav-link.active {
   color: black;
 }
 
-.nav-underline .nav-link:hover {
-  color: #FA5959;
-}
-
-.nav-underline .nav-link.active:after {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #FA5959;
-}
-
-.download {
+#cards {
   display: flex;
+  height: 500px;
+  justify-content: center;
+}
+
+#cards .card {
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  height: 400px;
+  width: 25%;
+  height: 80%;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgb(233, 230, 230);
+  margin: 20px;
 }
 
-.chrome {
+#chrome {
   align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.firefox {
+#firefox {
   align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.opera {
+#opera {
   align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 @media (max-width: 767.98px) {
-  .download {
+  #cards {
+    display: flex;
     flex-direction: column;
-  }
-  .chrome {
     width: 90%;
+    height: 1000px;
+    margin: 0 auto;
   }
-  .firefox {
+  #cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 90%;
+    height: 80%;
+    align-items: center;
+    box-shadow: 1px 1px 3px rgb(233, 230, 230);
+    margin: 20px;
   }
-  .opera {
-    width: 90%;
+  #chrome {
+    align-self: center;
+  }
+  #firefox {
+    align-self: center;
+  }
+  #opera {
+    align-self: center;
   }
 }/*# sourceMappingURL=main.css.map */
