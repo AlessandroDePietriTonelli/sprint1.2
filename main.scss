@@ -6,10 +6,16 @@ $theme-colors: (
     "secondary": $secondary
 );
 
-$accordion-icon-color: $primary;
+$navbar-light-toggler-icon-bg: url(imagenes/icon-hamburger.svg);
+$navbar-light-toggler-border-color: white;
 
+$accordion-button-icon: url(imagenes/icon-arrow.svg);
+$accordion-button-active-icon: url(imagenes/icon-close.svg);
+
+$form-feedback-icon-invalid: url(imagenes/icon-error.svg);
 
 $nav-underline-link-active-color: $secondary;
+
 
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -103,6 +109,26 @@ $nav-underline-link-active-color: $secondary;
     align-self: flex-end;
 }
 
+
+
+.invalid-tooltip {
+    background-color: $secondary;
+    color: white;
+}
+
+#footer {
+    background-color: #300469;
+    height: 70px;
+    padding: 20px;
+    
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
 @media (max-width: 767.98px) {
     #cards {
         
@@ -137,6 +163,9 @@ $nav-underline-link-active-color: $secondary;
     #opera{
         align-self: center;
     }
+
+    #footer {
+        height: 200px;
+    }
    
 }
-
