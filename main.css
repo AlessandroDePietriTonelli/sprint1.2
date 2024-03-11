@@ -3559,8 +3559,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: black;
-  --bs-nav-link-hover-color: #FA5959;
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -3647,7 +3647,7 @@ textarea.form-control-lg {
 .nav-underline {
   --bs-nav-underline-gap: 1rem;
   --bs-nav-underline-border-width: 0.125rem;
-  --bs-nav-underline-link-active-color: #FA5959;
+  --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
   gap: var(--bs-nav-underline-gap);
 }
 .nav-underline .nav-link {
@@ -11489,7 +11489,7 @@ textarea.form-control-lg {
 }
 
 #footer {
-  background-color: #300469;
+  background-color: #37474f;
   height: 70px;
   padding: 20px;
 }
@@ -11567,4 +11567,18 @@ textarea.form-control-lg {
   background-color: white;
   color: rgb(59, 59, 59);
   border: 1px solid rgb(59, 59, 59);
+}
+
+.nav-link-tab {
+  color: black !important;
+  border-bottom: 1px solid black !important;
+  text-decoration: none;
+}
+
+.nav-link-tab:hover {
+  border-bottom: 1px solid black !important;
+}
+
+.nav-link-tab:focus {
+  border-bottom: 2px solid #FA5959 !important;
 }/*# sourceMappingURL=main.css.map */

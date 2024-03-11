@@ -14,11 +14,6 @@ $accordion-icon-active-color: $secondary;
 
 $form-feedback-icon-invalid: url(imagenes/icon-error.svg);
 
-$nav-underline-link-active-color: $secondary;
-
-$nav-link-hover-color: $secondary;
-
-$nav-link-color: black;
 
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -118,7 +113,7 @@ $nav-link-color: black;
 }
 
 #footer {
-    background-color: #300469;
+    background-color: #37474f;
     height: 70px;
     padding: 20px;
     
@@ -208,4 +203,18 @@ $nav-link-color: black;
     background-color: white;
     color: rgb(59, 59, 59);
     border: 1px solid  rgb(59, 59, 59);
+}
+
+.nav-link-tab {
+    color: black !important;
+    border-bottom: 1px solid black !important;
+    text-decoration: none;
+}
+
+.nav-link-tab:hover {
+    border-bottom: 1px solid black !important;
+}
+
+.nav-link-tab:focus {
+    border-bottom: 2px solid $secondary !important;
 }
