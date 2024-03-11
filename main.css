@@ -3559,8 +3559,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-color: #FA5959;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -4320,7 +4320,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url(imagenes/icon-close.svg);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FA5959' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
@@ -11453,10 +11453,6 @@ textarea.form-control-lg {
   border-bottom-right-radius: 8rem;
 }
 
-.nav-link {
-  color: black;
-}
-
 #cards {
   display: flex;
   height: 500px;
@@ -11489,6 +11485,7 @@ textarea.form-control-lg {
 .invalid-tooltip {
   background-color: #FA5959;
   color: white;
+  position: unset;
 }
 
 #footer {
@@ -11533,4 +11530,41 @@ textarea.form-control-lg {
   #footer {
     height: 200px;
   }
+}
+.nav-link:hover {
+  color: #FA5959 !important;
+}
+
+#footer a:hover {
+  color: #FA5959 !important;
+}
+
+.facebook:hover {
+  background-color: #FA5959;
+}
+
+.twitter:hover {
+  background-color: #FA5959;
+}
+
+.accordion-button:hover {
+  color: #FA5959;
+}
+
+.btn-contact:hover {
+  background-color: white;
+  color: #FA5959;
+  border: 1px solid #FA5959;
+}
+
+.btn-cards:hover {
+  background-color: white;
+  color: #5265E1;
+  border: 1px solid #5265E1;
+}
+
+.btn-fire:hover {
+  background-color: white;
+  color: rgb(59, 59, 59);
+  border: 1px solid rgb(59, 59, 59);
 }/*# sourceMappingURL=main.css.map */

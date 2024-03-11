@@ -10,12 +10,15 @@ $navbar-light-toggler-icon-bg: url(imagenes/icon-hamburger.svg);
 $navbar-light-toggler-border-color: white;
 
 $accordion-button-icon: url(imagenes/icon-arrow.svg);
-$accordion-button-active-icon: url(imagenes/icon-close.svg);
+$accordion-icon-active-color: $secondary;
 
 $form-feedback-icon-invalid: url(imagenes/icon-error.svg);
 
 $nav-underline-link-active-color: $secondary;
 
+$nav-link-hover-color: $secondary;
+
+$nav-link-color: black;
 
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -74,9 +77,6 @@ $nav-underline-link-active-color: $secondary;
     border-bottom-right-radius: 8rem;
 }
 
-.nav-link { 
-    color: black;   
-}
 
 #cards {
     
@@ -114,6 +114,7 @@ $nav-underline-link-active-color: $secondary;
 .invalid-tooltip {
     background-color: $secondary;
     color: white;
+    position: unset;
 }
 
 #footer {
@@ -168,4 +169,43 @@ $nav-underline-link-active-color: $secondary;
         height: 200px;
     }
    
+}
+
+.nav-link:hover {
+    color: $secondary !important;
+}
+
+#footer a:hover {
+    color: $secondary !important;
+}
+
+.facebook:hover {
+    background-color: $secondary;
+}
+
+.twitter:hover {
+    background-color: $secondary;
+
+}
+
+.accordion-button:hover {
+    color: $secondary;
+}
+
+.btn-contact:hover {
+    background-color: white;
+    color: $secondary;
+    border: 1px solid $secondary;
+}
+
+.btn-cards:hover {
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+.btn-fire:hover {
+    background-color: white;
+    color: rgb(59, 59, 59);
+    border: 1px solid  rgb(59, 59, 59);
 }
